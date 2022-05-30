@@ -1,0 +1,39 @@
+{
+    "name": "ibrhaim13/mongodb-translate",
+    "description": "laravel static text translate package using mongodb for laravel 7 up",
+    "keywords": ["laravel", "admin", "translate", "static","mongodb"],
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Ibrhaim13\\Translate\\": "src/",
+            "Ibrhaim13\\Translate\\Tests\\": "tests",
+            "Ibrhaim13\\Translate\\Database\\Factories\\": "database/factories"
+
+
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                 "Ibrhaim13\\Translate\\RoutesTranslateServiceProvider",
+                 "Ibrhaim13\\Translate\\TranslateServiceProvider"
+            ]
+        }
+    },
+    "authors": [
+        {
+            "name": "Ibrahim I. I. Musabeh",
+            "email": "i.musabah92@gmail.com"
+        }
+    ],
+    "require-dev": {
+        "orchestra/testbench": "^6.0",
+        "phpunit/phpunit": "^9.5"
+    },
+    "require": {
+        "php": "^7.3|^8.0",
+        "laravel/framework": "^8.0|^9.0",
+        "torann/geoip": "^1.0|^3.0",
+        "jenssegers/mongodb": "^3.9"
+    }
+}
